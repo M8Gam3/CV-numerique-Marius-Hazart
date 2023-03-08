@@ -10,9 +10,13 @@ body {
     width: 100vw;
 }
 
+/* navigation */
+
 .navbar {
     height: 100vh;
-    position: fixed
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0px 0px 10px 5px #26282C;
 
     /* width: 204.762px; */
 }
@@ -21,7 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 19vw
+    width: 19vw;
 }
 
 .nav-selection {
@@ -38,6 +42,7 @@ body {
 
 .nav-li {
     display: flex;
+    width: 100%;
 }
 
 ul {
@@ -49,21 +54,116 @@ ul {
     overflow: auto;
 }
 
-li a {
+li p {
     display: block;
     color: #FFFFFF;
-    padding: 8px 16px;
+    padding: 8px 0px 8px 20px;
     text-decoration: none;
 }
 
-li a:hover {
+li p:hover {
     background-color: #202225;
     color: #FFFFFF;
 }
 
+/* toutes les sections de présentation */
+
 .content {
     display: flex;
     width: 81vw;
+    max-width: 81vw;
     margin-left: 19vw;
     height: 100vh;
+}
+
+/* home */
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .home-profile {
+    text-align: center;
+}
+
+.home .home-profile img {
+    width: 375px;
+    height: 375px;
+    border-radius: 50%;
+    align-items: center;
+    box-shadow: 0px 0px 10px 5px #26282C;
+}
+
+.home .home-profile .home-profile-info {
+    text-align: center;
+}
+
+.home .home-profile .home-profile-info h1 {
+    font-size: 35px;
+}
+
+.home .home-profile .home-profile-info h2 {
+    font-size: 30px;
+}
+
+.home .home-profile .home-profile-info hr.hr {
+    height: 2.5px;
+    background-color: #202225;
+    border: none;
+    border-radius: 20px;
+}
+
+/* presentation */
+
+.presentation {
+    display: flex;
+    margin-top: 20px;
+}
+
+.presentation .presentation-div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation .presentation-div .presentation-profile {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 80%;
+    padding: 25px;
+}
+
+.presentation .presentation-div .presentation-profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    align-items: center;
+    box-shadow: 0px 0px 10px 5px #26282C;
+}
+
+.presentation .presentation-div .presentation-profile .presentation-profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.presentation .presentation-div .presentation-hr {
+    width: 80%;
+    height: 2.5px;
+    background-color: #202225;
+    border: none;
+    border-radius: 20px;
+}
+
+.presentation .presentation-div .presentation-div-article {
+    display: flex;
+}
+
+.presentation .presentation-div .presentation-article {
+    display: flex;
+    flex-direction: column;
 }

@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+	<script defer src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script defer src="./assets/script.js"></script>
     <title>CV-Hazart-Marius-Accueil</title>
 </head>
@@ -11,14 +12,56 @@
     <main id="app" class="page">
         <nav class="navbar">
             <ul class="navigation">
-                <li class="nav-li"><a class="nav-selection" href="#app">Accueil</a></li>
-                <li class="nav-li"><a class="nav-selection" href="./presentation.html">Présentation</a></li>
-                <li class="nav-li"><a class="nav-selection" href="./skills.html">Compétences</a></li>
-                <li class="nav-li"><a class="nav-selection" href="./portfolio.html">Portfolio</a></li>
+                <li v-on:click="navHome" class="nav-li">
+                    <p class="nav-selection">Accueil</p>
+                </li>
+                <li v-on:click="navPresentation" class="nav-li">
+                    <p class="nav-selection">Présentation</p>
+                </li>
+                <li v-on:click="navSkills" class="nav-li">
+                    <p class="nav-selection">Compétences</p>
+                </li>
+                <li v-on:click="navPortfolio" class="nav-li">
+                    <p class="nav-selection">Portfolio</p>
+                </li>
             </ul>
         </nav>
-        <section class="content">
 
+        <section v-if="home" class="home content">
+            <div class="home-profile">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png" alt="photo de profile">
+                <div class="home-profile-info">
+                    <h1>Marius Hazart</h1>
+                    <hr class="hr">
+                    <h2>1ère année de bachelore a La MANU</h2>
+                </div>
+            </div>
+        </section>
+
+        <section v-if="presentation" class="presentation content">
+            <div class="presentation-div">
+                <div class="presentation-profile">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png" alt="photo de profile">
+                    <div class="presentation-profile-text">
+                        <h2>A propos de moi</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur ut ex eget efficitur. Cras odio nisi, venenatis auctor imperdiet non, efficitur ac enim. Donec aliquet feugiat eleifend. Ut vel porttitor enim. Fusce scelerisque ligula fringilla arcu pellentesque aliquet. Suspendisse eleifend feugiat dui, sit amet luctus risus dapibus ut. Fusce ac urna ac ex gravida pulvinar in eu libero. </p>
+                    </div>
+                </div>
+                <hr class="presentation-hr">
+                <div class="presentation-div-article">
+                    <div v-for="item in presentationArticle">
+                        <presentation-div v-bind:presentation_title="item.title" v-bind:presentation_text="item.desc"> </presentation-div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section v-if="skills" class="skills content">
+            <p>skills</p>
+        </section>
+
+        <section v-if="portfolio" class="portfolio content">
+            <p>portfolio</p>
         </section>
     </main>
 </body>
