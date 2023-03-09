@@ -61,7 +61,9 @@
         </section>
 
         <section v-if="portfolio" class="portfolio content">
-            <portfolio-div></portfolio-div>
+            <div v-for="item in portfolioProjets">
+                <portfolio-div v-bind:title="item.title" v-bind:image="item.image" v-bind:button="item.button" v-bind:link="item.link"></portfolio-div>
+            </div>
         </section>
     </main>
 </body>
