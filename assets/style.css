@@ -162,13 +162,14 @@ li p:hover {
 
 .presentation .presentation-div .presentation-div-article {
     display: flex;
-    max-width: 80%;
+    justify-content: space-evenly;
+    padding: 20px 40px 20px 40px;
 }
 
 .presentation .presentation-div .presentation-div-article .presentation-article {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 .presentation-desc {

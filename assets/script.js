@@ -5,13 +5,21 @@ Vue.component('presentation-div', {
                 </div>`,
     props: ['presentation_title', 'presentation_text'],
 });
+Vue.component('portfolio-div', {
+    template:   `<div class="portfolio-article">
+                    <h3> {{portfolio_article_title}} lorem ipsum dolor sit amet. </h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png" alt="">
+                    <button>0-0</button>
+                </div>`,
+    props: [],
+});
 
 var app = new Vue({
     el: '#app',
     data: {
         home: false,
-        portfolio: false,
-        presentation: true,
+        portfolio: true,
+        presentation: false,
         skills: false,
         presentationArticle: [
             {
