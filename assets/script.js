@@ -1,7 +1,7 @@
 Vue.component('presentation-div', {
     template:   `<div class="presentation-article">
                     <h3> {{presentation_title}} </h3>
-                    <p> {{presentation_text}} </p>
+                    <p class="presentation-desc"> {{presentation_text}} </p>
                 </div>`,
     props: ['presentation_title', 'presentation_text'],
 });

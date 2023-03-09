@@ -73,7 +73,7 @@ li p:hover {
     width: 81vw;
     max-width: 81vw;
     margin-left: 19vw;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 /* home */
@@ -82,6 +82,7 @@ li p:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .home .home-profile {
@@ -168,4 +169,8 @@ li p:hover {
     display: flex;
     flex-direction: column;
     padding: 20px;
+}
+
+.presentation-desc {
+    text-align: left;
 }
