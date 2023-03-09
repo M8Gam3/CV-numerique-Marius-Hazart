@@ -161,9 +161,11 @@ li p:hover {
 
 .presentation .presentation-div .presentation-div-article {
     display: flex;
+    max-width: 80%;
 }
 
-.presentation .presentation-div .presentation-article {
+.presentation .presentation-div .presentation-div-article .presentation-article {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
