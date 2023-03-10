@@ -63,6 +63,158 @@ var app = new Vue({
                 link: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png",
             },
         ],
+        skills : {
+            style: [
+                {
+                    name: 'CSS',
+                    level: 1,
+                    more:[
+                        {
+                            name: 'flex',
+                            level: 3,
+                        },
+                        {
+                            name: 'grid',
+                            level: 1
+                        },
+                        {
+                            name: 'reponsive',
+                            level: 2
+                        },
+                    ],
+                },
+            ],
+            algorithmie: [
+                {
+                    name: 'Python',
+                    level: 4,
+                    more:[
+                        {
+                            name: 'optimisation',
+                            level: 4,
+                        },
+                    ],
+                },
+                {
+                    name: 'JavaScript',
+                    level: 4,
+                    more:[
+                        {
+                            name: 'optimisation',
+                            level: 4,
+                        },
+                        {
+                            name: 'local storage',
+                            level: 3,
+                        },
+                    ],
+                },
+                {
+                    name: 'PHP',
+                    level: 3,
+                    more:[
+                        {
+                            name: 'procédural',
+                            level: 3,
+                        },
+                        {
+                            name: 'optimisation',
+                            level: 3,
+                        },
+                        {
+                            name: 'GET/POST',
+                            level: 2,
+                        },
+                    ],
+                },
+            ],
+            framework: [
+                {
+                    name: 'Vue.js',
+                    level: 4,
+                    more:[
+                        {
+                            name: 'optimisation',
+                            level: 3,
+                        },
+                        {
+                            name: 'templates',
+                            level: 3,
+                        },
+                    ],
+                },
+            ],
+            design: [
+                {
+                    name: 'Figma',
+                    level: 3,
+                    more:[
+                        {
+                            // name: 'flex',
+                            // level: 4,
+                        },
+                    ],
+                },
+                {
+                    name: 'Adobe XD',
+                    level: 2,
+                    more:[
+                        {
+                            // name: 'flex',
+                            // level: 4,
+                        },
+                    ],
+                },
+                {
+                    name: 'Photoshop',
+                    level: 1,
+                    more:[
+                        {
+                            // name: 'flex',
+                            // level: 4,
+                        },
+                    ],
+                },
+                {
+                    name: 'Adobe Illustrator',
+                    level: 2,
+                    more:[
+                        {
+                            // name: 'flex',
+                            // level: 4,
+                        },
+                    ],
+                },
+            ],
+            Autre: [
+                {
+                    name: 'Git',
+                    level: 3,
+                    more:[
+                        {
+                            name: 'Serveur GitHub',
+                            level: 4,
+                        },
+                        {
+                            name: 'Desktop',
+                            level: 4,
+                        },
+                        {
+                            name: 'Console',
+                            level: 1,
+                        },
+                        {
+                            name: 'Versionning',
+                            level: 3,
+                        },
+                        {
+                            name: 'Branch',
+                            level: 3,
+                        },
+                    ],
+                },
+            ],
+        },
 
     },
     computed: {
@@ -95,18 +247,3 @@ var app = new Vue({
         },
     },
 })
-
-
-// {
-//     name: 'css',
-//     type:[
-//         {
-//             name: 'flex',
-//             niveau: 4,
-//         },
-//         {
-//             name: 'grid',
-//             niveau: 1
-//         }
-//     ],
-// },
