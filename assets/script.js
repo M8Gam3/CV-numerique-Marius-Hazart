@@ -5,6 +5,7 @@ Vue.component('presentation-div', {
                 </div>`,
     props: ['presentation_title', 'presentation_text'],
 });
+
 Vue.component('portfolio-div', {
     template:   `<div class="portfolio-projet">
                     <h3> {{title}} </h3>
@@ -16,13 +17,21 @@ Vue.component('portfolio-div', {
     props: ['title', 'image', 'button', 'link'],
 });
 
+Vue.component('object-category-skills', {
+    template:   `<div class="skill-object">
+                    <h4> {{name}} </h4>
+                    <progress id="file" max="100" v-bind:value="level * 20"></progress>
+                </div>`,
+    props: ['level', 'name'],
+});
+
 var app = new Vue({
     el: '#app',
     data: {
         home: false,
-        portfolio: true,
+        portfolio: false,
         presentation: false,
-        skills: false,
+        skills: true,
         presentationArticle: [
             {
                 title: "La Manu",
@@ -64,10 +73,17 @@ var app = new Vue({
             },
         ],
         skills : {
-            style: [
+            Languages: [
+                {
+                    name: 'HTML',
+                    level: 3,
+                    more:[
+                        
+                    ],
+                },
                 {
                     name: 'CSS',
-                    level: 1,
+                    level: 2,
                     more:[
                         {
                             name: 'flex',
@@ -83,11 +99,9 @@ var app = new Vue({
                         },
                     ],
                 },
-            ],
-            algorithmie: [
                 {
                     name: 'Python',
-                    level: 4,
+                    level: 5,
                     more:[
                         {
                             name: 'optimisation',
@@ -111,11 +125,11 @@ var app = new Vue({
                 },
                 {
                     name: 'PHP',
-                    level: 3,
+                    level: 4,
                     more:[
                         {
                             name: 'procédural',
-                            level: 3,
+                            level: 4,
                         },
                         {
                             name: 'optimisation',
@@ -150,8 +164,16 @@ var app = new Vue({
                     level: 3,
                     more:[
                         {
-                            // name: 'flex',
-                            // level: 4,
+                            name: 'UI',
+                            level: 1,
+                        },
+                        {
+                            name: 'UX',
+                            level: 2,
+                        },
+                        {
+                            name: 'maquettage',
+                            level: 3,
                         },
                     ],
                 },
@@ -160,8 +182,16 @@ var app = new Vue({
                     level: 2,
                     more:[
                         {
-                            // name: 'flex',
-                            // level: 4,
+                            name: 'UI',
+                            level: 1,
+                        },
+                        {
+                            name: 'UX',
+                            level: 2,
+                        },
+                        {
+                            name: 'maquettage',
+                            level: 2,
                         },
                     ],
                 },
@@ -170,8 +200,16 @@ var app = new Vue({
                     level: 1,
                     more:[
                         {
-                            // name: 'flex',
-                            // level: 4,
+                            name: 'UI',
+                            level: 1,
+                        },
+                        {
+                            name: 'UX',
+                            level: 2,
+                        },
+                        {
+                            name: 'modification d\'images',
+                            level: 1,
                         },
                     ],
                 },
@@ -180,8 +218,16 @@ var app = new Vue({
                     level: 2,
                     more:[
                         {
-                            // name: 'flex',
-                            // level: 4,
+                            name: 'création de logo',
+                            level: 1,
+                        },
+                        {
+                            name: 'création de bannière',
+                            level: 1,
+                        },
+                        {
+                            name: 'illustration',
+                            level: 1,
                         },
                     ],
                 },
@@ -210,6 +256,20 @@ var app = new Vue({
                         {
                             name: 'Branch',
                             level: 3,
+                        },
+                    ],
+                },
+                {
+                    name: 'Trello',
+                    level: 3,
+                    more:[
+                        {
+                            name: 'Lecture',
+                            level: '5',
+                        },
+                        {
+                            name: 'Gestion',
+                            level: '2',
                         },
                     ],
                 },

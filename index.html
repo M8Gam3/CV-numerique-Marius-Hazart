@@ -57,12 +57,17 @@
         </section>
 
         <section v-if="skills" class="skills content">
-            <p>skills</p>
+            <div v-for="(object, category)  in skills" class="skill-div">
+                <h3> {{category}} </h3>
+                <div v-for="item in object">
+                    <object-category-skills v-bind:name="item.name" v-bind:level="item.level"></object-category-skills>
+                </div>
+            </div>
         </section>
 
         <section v-if="portfolio" class="portfolio content">
             <div v-for="item in portfolioProjets">
-                <portfolio-div v-bind:title="item.title" v-bind:image="item.image" v-bind:button="item.button" v-bind:link="item.link"></portfolio-div>
+                <portfolio-div v-bind:title="item.title" v-bind:image="item.image" v-bind:button="item.button" v-bind:url="item.url"></portfolio-div>
             </div>
         </section>
     </main>
