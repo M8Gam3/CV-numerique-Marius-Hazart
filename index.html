@@ -60,7 +60,7 @@
             <div v-for="(object, category)  in skills" class="skill-div">
                 <h3> {{category}} </h3>
                 <div v-for="item in object">
-                    <object-category-skills v-bind:name="item.name" v-bind:level="item.level"></object-category-skills>
+                    <object-category-skills v-bind:name="item.name" v-bind:level="item.level" v-bind:progresscolor="progressColor"></object-category-skills>
                 </div>
             </div>
         </section>

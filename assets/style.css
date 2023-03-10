@@ -175,3 +175,33 @@ li p:hover {
 .presentation-desc {
     text-align: left;
 }
+
+/* Skills */
+
+progress {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+progress[value]::-webkit-progress-value {
+    border-radius: 10px;
+}
+
+.progress-red::-webkit-progress-value { 
+    background: #DE0000; 
+}
+.progress-orange::-webkit-progress-value { 
+    background: #F46700; 
+}
+.progress-yellow::-webkit-progress-value { 
+    background: #C6D611; 
+}
+.progress-green::-webkit-progress-value { 
+    background: #00CB08; 
+}
+.progress-succes::-webkit-progress-value { 
+    background: #04980A; 
+}

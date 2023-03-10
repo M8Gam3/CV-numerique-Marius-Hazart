@@ -20,9 +20,9 @@ Vue.component('portfolio-div', {
 Vue.component('object-category-skills', {
     template:   `<div class="skill-object">
                     <h4> {{name}} </h4>
-                    <progress id="file" max="100" v-bind:value="level * 20"></progress>
+                    <progress v-bind:class="progresscolor(level)" id="file" max="100" v-bind:value="level * 20"></progress>
                 </div>`,
-    props: ['level', 'name'],
+    props: ['level', 'name', 'progresscolor'],
 });
 
 var app = new Vue({
@@ -161,7 +161,7 @@ var app = new Vue({
             design: [
                 {
                     name: 'Figma',
-                    level: 3,
+                    level: 2,
                     more:[
                         {
                             name: 'UI',
@@ -179,7 +179,7 @@ var app = new Vue({
                 },
                 {
                     name: 'Adobe XD',
-                    level: 2,
+                    level: 1,
                     more:[
                         {
                             name: 'UI',
@@ -215,7 +215,7 @@ var app = new Vue({
                 },
                 {
                     name: 'Adobe Illustrator',
-                    level: 2,
+                    level: 1,
                     more:[
                         {
                             name: 'création de logo',
@@ -304,6 +304,20 @@ var app = new Vue({
             this.portfolio = false;
             this.presentation = false;
             this.skills = true;
+        },
+        progressColor: function (level) {
+            switch (level) {
+                case 1:
+                    return "progress-red";
+                case 2:
+                    return "progress-orange";
+                case 3:
+                    return "progress-yellow";
+                case 4:
+                    return "progress-green";
+                case 5:
+                    return "progress-succes";
+            };
         },
     },
 })
