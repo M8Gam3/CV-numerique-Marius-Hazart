@@ -155,7 +155,7 @@ var app = new Vue({
             framework: [
                 {
                     name: 'Vue.js',
-                    level: 4,
+                    level: 5,
                     more:[
                         {
                             name: 'optimisation',
@@ -163,7 +163,7 @@ var app = new Vue({
                         },
                         {
                             name: 'templates',
-                            level: 3,
+                            level: 4,
                         },
                     ],
                 },
