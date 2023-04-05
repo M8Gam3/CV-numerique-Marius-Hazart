@@ -58,12 +58,19 @@
         </section>
 
         <section v-if="skills" class="skills content">
-            <div v-for="(object, category) in skillsList" class="skill-div">
-                <h3> {{category}} </h3>
-                <div v-for="item in object">
-                    <object-category-skills v-bind:name="item.name" v-bind:level="item.level" v-bind:progresscolor="progressColor"></object-category-skills>
-                </div>
+            <div class="skills-h2">
+                <div></div>
+                <h2>Skills</h2>
+                <div><button>Test</button></div>
             </div>
+            <article class="skills-article">
+                <div v-for="(object, category) in skillsList" class="skill-div" v-bind:class="category">
+                    <h3> {{category}} </h3>
+                    <div v-for="item in object">
+                        <object-category-skills v-bind:name="item.name" v-bind:level="item.level" v-bind:progresscolor="progressColor"></object-category-skills>
+                    </div>
+                </div>
+            </article>
         </section>
 
         <section v-if="portfolio" class="portfolio content">

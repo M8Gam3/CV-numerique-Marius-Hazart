@@ -8,7 +8,7 @@ Vue.component('presentation-div', {
 
 Vue.component('portfolio-div', {
     template:   `<div class="portfolio-projet">
-                    <h3> {{title}} </h3>
+                    <h4> {{title}} </h4>
                     <img v-bind:src="image" alt="">
                     <a v-bind:href="link"> 
                         <button> {{button}} </button>
@@ -101,7 +101,7 @@ var app = new Vue({
                 },
                 {
                     name: 'Python',
-                    level: 5,
+                    level: 4,
                     more:[
                         {
                             name: 'optimisation',
@@ -125,7 +125,7 @@ var app = new Vue({
                 },
                 {
                     name: 'PHP',
-                    level: 4,
+                    level: 3.5,
                     more:[
                         {
                             name: 'procédural',
@@ -142,12 +142,12 @@ var app = new Vue({
                     ],
                 },
                 {
-                    name: 'XML',
+                    name: 'mySQl',
                     level: 3,
                     more:[
                         {
-                            name: 'RSS',
-                            level: '?',
+                            name: 'SELECT',
+                            level: '3',
                         },
                     ],
                 },
@@ -155,7 +155,7 @@ var app = new Vue({
             framework: [
                 {
                     name: 'Vue.js',
-                    level: 5,
+                    level: 4,
                     more:[
                         {
                             name: 'optimisation',
@@ -283,6 +283,16 @@ var app = new Vue({
                         },
                     ],
                 },
+                {
+                    name: 'XML',
+                    level: 3,
+                    more:[
+                        {
+                            name: 'RSS',
+                            level: 1,
+                        },
+                    ],
+                },
             ],
         },
 
@@ -316,18 +326,29 @@ var app = new Vue({
             this.skills = true;
         },
         progressColor: function (level) {
-            switch (level) {
-                case 1:
-                    return "progress-red";
-                case 2:
-                    return "progress-orange";
-                case 3:
-                    return "progress-yellow";
-                case 4:
-                    return "progress-green";
-                case 5:
-                    return "progress-succes";
-            };
+            if (level <= 1) {
+                return "progress-red";
+            } else if (level <= 2) {
+                return "progress-orange";
+            } else if (level <= 3) {
+                return "progress-yellow";
+            } else if (level <= 4) {
+                return "progress-green";
+            } else if (level <= 5) {
+                return "progress-succes";
+            }
+            // switch (level) {
+            //     case 1:
+            //         return "progress-red";
+            //     case 2:
+            //         return "progress-orange";
+            //     case 3:
+            //         return "progress-yellow";
+            //     case 4:
+            //         return "progress-green";
+            //     case 5:
+            //         return "progress-succes";
+            // };
         },
     },
 })

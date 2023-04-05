@@ -205,3 +205,21 @@ progress[value]::-webkit-progress-value {
 .progress-succes::-webkit-progress-value { 
     background: #04980A; 
 }
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-h2 {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills-article {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
