@@ -35,15 +35,15 @@ var app = new Vue({
         presentationArticle: [
             {
                 title: "La Manu",
-                desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur ut ex eget efficitur. Cras odio nisi, venenatis auctor imperdiet non, efficitur ac enim. Donec aliquet feugiat eleifend.",
+                desc: "Actuellement en première année de formation a La Manu pour un Master dans les métiers du numériques. Apprentissage du JS, Vue.js, PHP, Python, MySQL, PAO, UX/I, HTML, CSS.",
             },
             {
                 title: "Edouard Branly",
-                desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur ut ex eget efficitur. Cras odio nisi, venenatis auctor imperdiet non, efficitur ac enim. Donec aliquet feugiat eleifend.",
+                desc: "Obtention d'un Bac STI2D option SIN mention bien dans le Lycée d'Edouard branly. Première année en générale option NSI pour finalement me réorienter vers la STI2D qui convenait mieux a mes attentes liés aux métiers du numériques.",
             },
             {
-                title: "Novalis",
-                desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur ut ex eget efficitur. Cras odio nisi, venenatis auctor imperdiet non, efficitur ac enim. Donec aliquet feugiat eleifend.",
+                title: "Novalys",
+                desc: "Stage de troisième dans l'entreprise Novalys basée sur Amiens. Ayant été en contact tout du long avec des proffessionels travaillant sur HTML,CSS et PHP pour gérer et administrer le site de l'entreprise en le mettant à jour régulièrement",
             },
         ],
         portfolioProjets: [
