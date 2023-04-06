@@ -28,10 +28,10 @@ Vue.component('object-category-skills', {
 var app = new Vue({
     el: '#app',
     data: {
-        home: false,
+        home: true,
         portfolio: false,
         presentation: false,
-        skills: true,
+        skills: false,
         presentationArticle: [
             {
                 title: "La Manu",
