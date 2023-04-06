@@ -10,7 +10,7 @@ Vue.component('portfolio-div', {
     template:   `<div class="portfolio-projet">
                     <h4> {{title}} </h4>
                     <img class="portfolio-img" v-bind:src="image" v-bind:alt="title">
-                    <a v-bind:href="link"> 
+                    <a v-bind:href="link" target="_blank">
                         <button> {{button}} </button>
                     </a>
                 </div>`,
@@ -48,28 +48,40 @@ var app = new Vue({
         ],
         portfolioProjets: [
             {
-                title: "Projet Shifumi",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png",
-                button: "Lien du site",
-                link: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png",
+                title: "Shifumi version cyberpunk(JS)",
+                image: "./assets/img/shifumi.png",
+                button: "Lien du github",
+                link: "https://github.com/MRCThomas/Projet-Shifumi",
             },
             {
-                title: "Projet Restaurant",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png",
-                button: "Lien du site",
-                link: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png",
+                title: "District Noir(python)",
+                image: "./assets/img/district-noir.png",
+                button: "Lien du github",
+                link: "https://github.com/M8Gam3/district-noir-python",
             },
             {
-                title: "Projet Instant Gaming",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png",
-                button: "Lien du site",
-                link: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png",
+                title: "Instant Gaming remake(html/css)",
+                image: "./assets/img/instant-gaming.png",
+                button: "Lien du github",
+                link: "https://github.com/MRCThomas/Projet-Shifumi",
             },
             {
-                title: "Projet CV",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png",
-                button: "Lien du Figma",
-                link: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png",
+                title: "Popchill(Vue.js/API)",
+                image: "./assets/img/popchill.png",
+                button: "Lien du github",
+                link: "https://github.com/makake974/vuejs",
+            },
+            {
+                title: "La caverne aux infos(php/xml)",
+                image: "./assets/img/la-caverne-aux-infos.png",
+                button: "Lien du github",
+                link: "https://github.com/M8Gam3/La-Cavernes-Aux-Infos",
+            },
+            {
+                title: "Blackjack(python)",
+                image: "./assets/img/blackjack.png",
+                button: "Lien du github",
+                link: "https://github.com/M8Gam3/blackjack-python-",
             },
         ],
         skillsList : {

@@ -282,6 +282,6 @@ progress[value]::-webkit-progress-value {
 
 .portfolio-img {
     object-fit: cover;
-    height: auto;
+    height: 30vh;
     width: auto;
 }
