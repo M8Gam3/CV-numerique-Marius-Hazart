@@ -29,9 +29,9 @@ var app = new Vue({
     el: '#app',
     data: {
         home: false,
-        portfolio: true,
+        portfolio: false,
         presentation: false,
-        skills: false,
+        skills: true,
         presentationArticle: [
             {
                 title: "La Manu",
@@ -164,6 +164,16 @@ var app = new Vue({
                         {
                             name: 'templates',
                             level: 4,
+                        },
+                    ],
+                },
+                {
+                    name: 'Bootstrap',
+                    level: 3,
+                    more:[
+                        {
+                            name: 'style',
+                            level: 3,
                         },
                     ],
                 },

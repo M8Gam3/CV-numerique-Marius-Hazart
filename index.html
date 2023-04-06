@@ -45,7 +45,7 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png" alt="photo de profile">
                     <div class="presentation-profile-text">
                         <h2>A propos de moi</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur ut ex eget efficitur. Cras odio nisi, venenatis auctor imperdiet non, efficitur ac enim. Donec aliquet feugiat eleifend. Ut vel porttitor enim. Fusce scelerisque ligula fringilla arcu pellentesque aliquet. Suspendisse eleifend feugiat dui, sit amet luctus risus dapibus ut. Fusce ac urna ac ex gravida pulvinar in eu libero. </p>
+                        <p>Etudiant motivé et doté d'une solide base théorique, je désire évoluer au sein du secteur du développement informatique background. Je m'épanouis à résoudre des problèmes complexes pour atteindre les objectifs fixés.</p>
                     </div>
                 </div>
                 <hr class="presentation-hr">
@@ -59,9 +59,8 @@
 
         <section v-if="skills" class="skills content">
             <div class="skills-h2">
-                <div class="fake-skills-button"></div>
-                <h2 class="skills-title">Skills</h2>
-                <div class="skills-button"><button>Test</button></div>
+                <div class="skills-title-div"><h2 class="skills-title">Skills</h2></div>
+                <div class="skills-desc"><p class="skills-desc-p">Les niveaux représentés sont affiliés a mon niveau de compréhension et développement dans chaques domaines plutôt que mon niveau de compétences</p></div>
             </div>
             <article class="skills-article">
                 <div v-for="(object, category) in skillsList" class="skill-div" v-bind:class="category">

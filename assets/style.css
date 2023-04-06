@@ -7,7 +7,6 @@ body {
 
 .page {
     display: flex;
-    width: 100vw;
 }
 
 /* navigation */
@@ -214,7 +213,7 @@ progress[value]::-webkit-progress-value {
 .skills-h2 {
     margin-top: 3%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -224,18 +223,37 @@ progress[value]::-webkit-progress-value {
     justify-content: space-evenly;
 }
 
-.fake-skills-button {
-    width: 30%;
-}
-
 .skills-button {
-    width: 30%;
+    margin-right: 4vw;
+    background-color: #2F3136;
+    border: none;
+    color: white;
+    border-radius: 10%;
+    height: 50%;
+    padding: 3px 32px;
+    display: inline-block;
+    font-size: 16px;
 }
 
-.skills-title {
-    width: 40%;
+.skills-title-div {
+    display: flex;
     justify-content: center;
 }
+
+.skills-desc {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.skills-desc-p {
+    width: 60vw;
+    text-align: center;
+}
+
+/* .skills-title {
+
+} */
 
 /* portfolio */
 
