@@ -9,7 +9,7 @@ Vue.component('presentation-div', {
 Vue.component('portfolio-div', {
     template:   `<div class="portfolio-projet">
                     <h4> {{title}} </h4>
-                    <img v-bind:src="image" alt="">
+                    <img class="portfolio-img" v-bind:src="image" v-bind:alt="title">
                     <a v-bind:href="link"> 
                         <button> {{button}} </button>
                     </a>
@@ -29,9 +29,9 @@ var app = new Vue({
     el: '#app',
     data: {
         home: false,
-        portfolio: false,
+        portfolio: true,
         presentation: false,
-        skills: true,
+        skills: false,
         presentationArticle: [
             {
                 title: "La Manu",

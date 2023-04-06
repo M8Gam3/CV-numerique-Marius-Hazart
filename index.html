@@ -59,9 +59,9 @@
 
         <section v-if="skills" class="skills content">
             <div class="skills-h2">
-                <div></div>
-                <h2>Skills</h2>
-                <div><button>Test</button></div>
+                <div class="fake-skills-button"></div>
+                <h2 class="skills-title">Skills</h2>
+                <div class="skills-button"><button>Test</button></div>
             </div>
             <article class="skills-article">
                 <div v-for="(object, category) in skillsList" class="skill-div" v-bind:class="category">
@@ -74,8 +74,11 @@
         </section>
 
         <section v-if="portfolio" class="portfolio content">
-            <div v-for="item in portfolioProjets">
-                <portfolio-div v-bind:title="item.title" v-bind:image="item.image" v-bind:button="item.button" v-bind:url="item.url"></portfolio-div>
+            <div class="portfolio-h2">
+                <h2 class="portfolio-title">Portfolio</h2>
+            </div>
+            <div class="portfolio-div" >
+                <portfolio-div class="portfolio-for" v-for="item in portfolioProjets" v-bind:title="item.title" v-bind:image="item.image" v-bind:button="item.button" v-bind:url="item.url"></portfolio-div>
             </div>
         </section>
     </main>

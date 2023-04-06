@@ -223,3 +223,47 @@ progress[value]::-webkit-progress-value {
     display: flex;
     justify-content: space-evenly;
 }
+
+.fake-skills-button {
+    width: 30%;
+}
+
+.skills-button {
+    width: 30%;
+}
+
+.skills-title {
+    width: 40%;
+    justify-content: center;
+}
+
+/* portfolio */
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.portfolio-projet {
+    height: auto;
+    width: calc(90% /3);
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-img {
+    object-fit: cover;
+    height: auto;
+    width: auto;
+}
