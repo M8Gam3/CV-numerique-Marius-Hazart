@@ -285,3 +285,18 @@ progress[value]::-webkit-progress-value {
     height: 30vh;
     width: auto;
 }
+
+.github-link-div {
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #cecdcd;
+}
