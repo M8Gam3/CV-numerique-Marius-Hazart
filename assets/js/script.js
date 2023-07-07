@@ -83,6 +83,12 @@ var app = new Vue({
                 button: "Lien du github",
                 link: "https://github.com/M8Gam3/blackjack-python-",
             },
+            {
+                title: "Refonte de la gestion des utilisateurs (Pinel, Amiens)",
+                image: "./assets/img/pinel.png",
+                button: "Lien du rapport de stage",
+                link: "https://docs.google.com/document/d/1Wb_nxQzDzcckgN0NPZOg5tkyx9mX5tYF-8GzdUR9w9o/edit?usp=sharing",
+            },
         ],
         skillsList : {
             Languages: [
